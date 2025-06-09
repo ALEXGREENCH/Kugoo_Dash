@@ -53,7 +53,7 @@
     <color name="color_edit">#ccffffff</color>
     <color name="color_edit_hint">#99ffffff</color>
     <color name="color_light_pink">#fffea3a4</color>
-    <color name="color_primary">#ffffffff</color>
+    <color name="color_primary">#9D00FF</color>
     <color name="color_rank_list_top">#fffee1b7</color>
     <color name="color_setting_view">#1affffff</color>
     <color name="color_track_path">#ffffac70</color>
@@ -304,9 +304,9 @@
     <color name="m3_sys_color_light_surface_variant">@color/m3_ref_palette_neutral_variant90</color>
     <color name="m3_sys_color_light_tertiary">@color/m3_ref_palette_tertiary40</color>
     <color name="m3_sys_color_light_tertiary_container">@color/m3_ref_palette_tertiary90</color>
-    <color name="main_bg_color">#fffafafa</color>
+    <color name="main_bg_color">#0D0D0D</color>
     <color name="main_blue">#ff239ae4</color>
-    <color name="main_style_color">#ffeb6100</color>
+    <color name="main_style_color">#FF00C8</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -393,7 +393,7 @@
     <color name="tab_tv_unselect_color">#ff747474</color>
     <color name="test_color">#ff000000</color>
     <color name="text_black">#ff000000</color>
-    <color name="text_color">#ff000000</color>
+    <color name="text_color">#39FF14</color>
     <color name="text_gray">#ffa5a6a7</color>
     <color name="text_white">#ffffffff</color>
     <color name="tooltip_background_dark">#e6616161</color>
@@ -677,4 +677,10 @@
     <color name="zhihu_preview_bottom_toolbar_back_text">#ffffffff</color>
     <color name="zhihu_primary">#ff1e8ae8</color>
     <color name="zhihu_primary_dark">#ff176eb9</color>
+	
+	<color name="black_neon">#0D0D0D</color>
+	<color name="neon_green">#39FF14</color>
+	<color name="neon_purple">#9D00FF</color>
+	<color name="neon_blue">#00FFFF</color>
+	<color name="neon_pink">#FF00C8</color>
 </resources>
