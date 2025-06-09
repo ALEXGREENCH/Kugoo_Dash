@@ -427,7 +427,7 @@ Are you sure to delete?"</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
     <string name="mtrl_timepicker_confirm">OK</string>
-    <string name="my_app_name">KUGOO</string>
+    <string name="my_app_name">KUGOO DASH</string>
     <string name="name_not_empty">nick name cannot be empty</string>
     <string name="navigation">Navigation</string>
     <string name="net_toast">Network anomaly, please check the network.</string>

@@ -364,7 +364,7 @@
     <string name="mtrl_picker_toggle_to_day_selection">Нажмите, чтобы перейти к выбору дня</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Перейти в режим ввода текста</string>
     <string name="mtrl_picker_toggle_to_year_selection">Нажмите, чтобы перейти к выбору года</string>
-    <string name="my_app_name">KUGOO</string>
+    <string name="my_app_name">KUGOO DASH</string>
     <string name="name_not_empty">Имя пользователя не может быть пустым</string>
     <string name="navigation">Навигация</string>
     <string name="net_toast">Ошибка сети, пожалуйста, проверьте свое подключение к Интернету</string>
