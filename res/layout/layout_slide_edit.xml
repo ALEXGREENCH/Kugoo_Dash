@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_top" android:background="@color/circle_color_draw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="置顶" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_collect" android:background="@color/color_light_pink" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="收藏" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_delete" android:background="@color/dial_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+</LinearLayout>

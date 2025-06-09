@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kugoo.kugookirin.view.NoSwipeViewPager android:id="@id/fragment_vp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/page_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.kugoo.kugookirin.view.MyTabLayout android:id="@id/bottom_tabLayout" android:background="@color/dialog_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" app:tabIndicator="@null" app:tabIndicatorColor="@color/main_style_color" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/main_style_color" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="#ffd3d2d3" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ranking_item" android:background="@drawable/dialog_bg04" android:padding="5.0dip" android:layout_width="150.0dip" android:layout_height="200.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginHorizontal="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kugoo.kugookirin.view.CircleImageView android:layout_gravity="center" android:id="@id/ranking_item_portrait" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@mipmap/avatar_photo" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:id="@id/ranking_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Tatiana Gageasfa" android:maxLines="1" android:maxEms="6" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ranking_item_country_flag" android:layout_width="20.0dip" android:layout_height="10.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/gray_6a" android:id="@id/ranking_item_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tatiana Gageasfa" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:gravity="bottom" android:id="@id/ranking_item_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOP" android:layout_marginEnd="3.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/main_style_color" android:gravity="bottom" android:id="@id/ranking_item_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_gray" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="·" android:layout_marginHorizontal="3.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/text_gray" android:gravity="bottom" android:id="@id/ranking_item_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/text_gray" android:gravity="bottom" android:id="@id/ranking_item_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_marginHorizontal="10.0dip" android:layout_marginVertical="5.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/ranking_item_follow_btn" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/follow" android:paddingVertical="5.0dip" />
+</LinearLayout>

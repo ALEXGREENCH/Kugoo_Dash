@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kugoo.kugookirin.social.HackyViewPager android:id="@id/pager" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/indicator" android:background="@mipmap/see_image_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x20" android:text="0/0" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/save_image_liner" android:background="@color/transparent" android:padding="@dimen/x15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="20.0sp" android:id="@id/save_image_btn" android:background="@mipmap/save_image_bag" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/save_image_text" android:textAllCaps="false" />
+        <Button android:textSize="20.0sp" android:textColor="#ff747474" android:id="@id/save_image_cancel_btn" android:background="@mipmap/save_image_bag" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="@dimen/x10" android:text="@string/cancel" android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>

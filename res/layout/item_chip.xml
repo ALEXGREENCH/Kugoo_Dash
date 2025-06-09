@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip android:textSize="17.0sp" android:textColor="@color/main_style_color" android:id="@id/item_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文字" app:chipBackgroundColor="@color/main_bg_color" app:chipStrokeColor="@color/main_style_color" app:chipStrokeWidth="1.0dip" style="@style/Widget.MaterialComponents.Chip.Choice"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

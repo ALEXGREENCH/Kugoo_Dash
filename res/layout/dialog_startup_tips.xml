@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bg_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8" android:layout_marginBottom="@dimen/x8" android:src="@mipmap/startup_tips_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x4" android:layout_marginBottom="@dimen/x6" android:text="@string/setting_startup_zero_info" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_startup_non_zero_info" />
+        <TextView android:textColor="@color/blue_speed" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_ok" android:layout_width="fill_parent" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x10" android:layout_marginBottom="@dimen/x6" android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

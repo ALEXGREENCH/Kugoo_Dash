@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/setting_pro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:layout_centerInParent="true">
+        <TextView android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homefragment_music_bluetooth" />
+        <TextView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/text_color" android:gravity="center" android:id="@id/setting_cancel" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/homefragment_music_bluetooth_ok" android:layout_weight="1.0" />
+            <TextView android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/setting_btn" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/homefragment_music_bluetooth_setting" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

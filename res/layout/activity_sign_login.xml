@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:id="@id/login_skip_btn" android:padding="@dimen/x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_skip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/login_sign_back" android:padding="@dimen/x5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x50" android:src="@mipmap/launcher_logo" />
+    <Button android:textColor="@color/main_bg_color" android:id="@id/select_login" android:background="@drawable/shape_login_bg02" android:layout_width="@dimen/x92" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/x5" android:text="@string/login_btn" android:layout_above="@id/select_sign" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    <Button android:textColor="@color/main_style_color" android:id="@id/select_sign" android:background="@drawable/sign_bg02" android:layout_width="@dimen/x92" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/x30" android:text="@string/login_sign" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+</RelativeLayout>

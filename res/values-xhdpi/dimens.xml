@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x1">2.0dip</dimen>
+    <dimen name="x10">20.0dip</dimen>
+    <dimen name="x100">200.0dip</dimen>
+    <dimen name="x11">22.0dip</dimen>
+    <dimen name="x110">220.0dip</dimen>
+    <dimen name="x12">24.0dip</dimen>
+    <dimen name="x120">240.0dip</dimen>
+    <dimen name="x122">244.0dip</dimen>
+    <dimen name="x13">26.0dip</dimen>
+    <dimen name="x15">30.0dip</dimen>
+    <dimen name="x16">32.0dip</dimen>
+    <dimen name="x17">34.0dip</dimen>
+    <dimen name="x18">36.0dip</dimen>
+    <dimen name="x2">4.0dip</dimen>
+    <dimen name="x20">40.0dip</dimen>
+    <dimen name="x22">44.0dip</dimen>
+    <dimen name="x25">50.0dip</dimen>
+    <dimen name="x3">6.0dip</dimen>
+    <dimen name="x30">60.0dip</dimen>
+    <dimen name="x4">8.0dip</dimen>
+    <dimen name="x40">80.0dip</dimen>
+    <dimen name="x42">84.0dip</dimen>
+    <dimen name="x5">10.0dip</dimen>
+    <dimen name="x50">100.0dip</dimen>
+    <dimen name="x55">110.0dip</dimen>
+    <dimen name="x6">12.0dip</dimen>
+    <dimen name="x60">120.0dip</dimen>
+    <dimen name="x65">130.0dip</dimen>
+    <dimen name="x72">144.0dip</dimen>
+    <dimen name="x8">16.0dip</dimen>
+    <dimen name="x80">160.0dip</dimen>
+    <dimen name="x85">170.0dip</dimen>
+    <dimen name="x9">18.0dip</dimen>
+    <dimen name="x92">184.0dip</dimen>
+</resources>

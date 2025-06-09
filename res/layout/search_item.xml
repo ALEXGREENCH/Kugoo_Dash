@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/x4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/map_search_navage_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_pos" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" android:layout_toLeftOf="@id/item_map_arrow" android:layout_toRightOf="@id/map_search_navage_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/map_search_navage_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chain" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_color" android:id="@id/map_search_nav_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x2" android:text="Chain" />
+    </LinearLayout>
+    <ImageView android:id="@id/item_map_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/map_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/discover_search_layout" android:background="@drawable/search_box_bg" android:padding="@dimen/x3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/x5" android:minWidth="220.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_btn_black" />
+            <EditText android:textColor="@color/text_color" android:gravity="center_vertical" android:id="@id/discover_search_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_text" android:layout_marginStart="@dimen/x2" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/discover_search_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_back" android:paddingEnd="@dimen/x5" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@id/discover_search_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/x5" app:tabIndicatorColor="@color/main_style_color" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2.0dip" app:tabMode="scrollable" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/text_color" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/text_gray" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/discover_search_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

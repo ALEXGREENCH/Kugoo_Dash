@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:sob="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/message_btn" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_message_btn" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_discover" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/search_btn" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/search_btn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/discover_refreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.kugoo.kugookirin.view.SobLooperPager android:id="@id/discover_sl_pager" android:layout_width="fill_parent" android:layout_height="150.0dip" sob:is_title_show="false" sob:show_pager_count="multi" sob:switch_time="3000" />
+                <LinearLayout android:orientation="vertical" android:id="@id/odo_ranking_data_layout" android:background="@drawable/odo_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:id="@id/odo_ranking_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/odo_ranking" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/odo_ranking_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/social_ranking_data_layout" android:background="@drawable/odo_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:id="@id/social_ranking_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/social_activity" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/social_ranking_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.google.android.material.tabs.TabLayout android:id="@id/discover_tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" sob:tabIndicatorColor="@color/main_style_color" sob:tabIndicatorFullWidth="false" sob:tabMode="scrollable" sob:tabRippleColor="@android:color/transparent" sob:tabSelectedTextColor="@color/text_color" sob:tabTextAppearance="@style/TabLayoutTextStyle" sob:tabTextColor="@color/text_gray" />
+                </LinearLayout>
+                <androidx.viewpager.widget.ViewPager android:id="@id/discover_view_pager" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="720.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

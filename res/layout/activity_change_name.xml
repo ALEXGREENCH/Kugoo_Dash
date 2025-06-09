@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/x3">
+        <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/name_et" android:background="@null" android:paddingBottom="@dimen/x20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" android:hint="@string/enter_nickname" android:maxLength="10" android:layout_marginHorizontal="@dimen/x5" />
+        <View android:background="@color/black_item_bg02" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/text_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" android:text="@string/nickname_hint" android:layout_marginHorizontal="@dimen/x5" />
+    </LinearLayout>
+</LinearLayout>

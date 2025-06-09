@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_img" android:padding="@dimen/x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:layout_gravity="end" android:id="@id/pwd_skip_btn" android:padding="@dimen/x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_skip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/launcher_logo" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/edit_input_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone" />
+            <EditText android:textSize="16.0sp" android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:layout_gravity="start|center" android:id="@id/pwd_number" android:background="@null" android:layout_width="@dimen/x72" android:layout_height="wrap_content" android:hint="@string/txt_phone_num" android:maxLines="1" android:layout_marginStart="@dimen/x15" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/edit_input_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3">
+            <ImageView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_pwd" />
+            <EditText android:textSize="16.0sp" android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:layout_gravity="start|center" android:id="@id/pwd_password" android:background="@null" android:layout_width="@dimen/x72" android:layout_height="wrap_content" android:hint="@string/login_pwd" android:maxLines="1" android:inputType="textPassword" android:layout_marginStart="@dimen/x15" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/x17" android:layout_marginEnd="@dimen/x20">
+            <TextView android:textColor="@color/text_gray" android:id="@id/btn_email_login" android:padding="@dimen/x3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_email_login" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pwd_login_btn" android:background="@drawable/bg_forgetpwd_btn" android:padding="@dimen/x3" android:layout_width="@dimen/x92" android:layout_height="wrap_content" android:text="@string/login_btn" />
+        <RelativeLayout android:gravity="end" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="@dimen/x92" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_gray" android:id="@id/pwd_forget_pwd" android:padding="@dimen/x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forgot" android:layout_alignParentStart="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:id="@id/pwd_sign_up" android:padding="@dimen/x3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_sign" android:layout_marginStart="@dimen/x10" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/policy_tip_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_policy_tip" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/pwd_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

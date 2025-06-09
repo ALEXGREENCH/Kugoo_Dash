@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <RelativeLayout android:id="@id/rela_open" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cb_open" android:background="@drawable/selector_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="true" android:button="@null" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/open_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/txt_open" android:layout_toRightOf="@id/cb_open" />
+        <TextView android:textColor="@color/gray_6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/open_hint" android:layout_toRightOf="@id/cb_open" android:layout_below="@id/open_tv" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rela_private" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cb_private" android:background="@drawable/selector_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="true" android:button="@null" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/private_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/txt_private" android:layout_toRightOf="@id/cb_private" />
+        <TextView android:textColor="@color/gray_6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/txt_private_hint" android:layout_toRightOf="@id/cb_private" android:layout_below="@id/private_tv" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rela_friend" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cb_friend" android:background="@drawable/selector_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="true" android:button="@null" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/friend_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/friends_visible" android:layout_toRightOf="@id/cb_friend" />
+        <TextView android:textColor="@color/gray_6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/txt_friend_hint" android:layout_toRightOf="@id/cb_friend" android:layout_below="@id/friend_tv" />
+    </RelativeLayout>
+</LinearLayout>

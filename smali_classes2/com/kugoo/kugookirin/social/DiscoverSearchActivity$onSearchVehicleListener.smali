@@ -1,0 +1,19 @@
+.class interface abstract Lcom/kugoo/kugookirin/social/DiscoverSearchActivity$onSearchVehicleListener;
+.super Ljava/lang/Object;
+.source "DiscoverSearchActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kugoo/kugookirin/social/DiscoverSearchActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "onSearchVehicleListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract searchVehicle(Ljava/lang/String;)V
+.end method

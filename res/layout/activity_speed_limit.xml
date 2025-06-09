@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <RelativeLayout android:id="@id/gear_one_limit" android:visibility="visible" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x10" style="@style/speed_limit_rela">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gear_1_pas" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_one_limit_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/x2" android:layout_toStartOf="@id/gear_one_limit_unit" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_one_limit_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km/h" android:layout_toStartOf="@id/next01" />
+        <ImageView android:id="@id/next01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/next_btn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gear_two_limit" android:visibility="visible" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x4" style="@style/speed_limit_rela">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gear_2_pas" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_two_limit_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/x2" android:layout_toStartOf="@id/gear_two_limit_unit" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_two_limit_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km/h" android:layout_toStartOf="@id/next02" />
+        <ImageView android:id="@id/next02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/next_btn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gear_three_limit" android:visibility="visible" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x4" style="@style/speed_limit_rela">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gear_3_pas" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_three_limit_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/x2" android:layout_toStartOf="@id/gear_three_limit_unit" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_three_limit_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km/h" android:layout_toStartOf="@id/next03" />
+        <ImageView android:id="@id/next03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/next_btn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gear_four_limit" android:visibility="gone" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x4" style="@style/speed_limit_rela">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gear_4_pas" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_four_limit_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/x2" android:layout_toStartOf="@id/gear_four_limit_unit" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/gear_four_limit_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km" android:layout_toStartOf="@id/next04" />
+        <ImageView android:id="@id/next04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/next_btn" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

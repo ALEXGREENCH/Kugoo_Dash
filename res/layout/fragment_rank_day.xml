@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top1_relate" android:background="@drawable/bg_rank_list_top1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/x5">
+        <com.kugoo.kugookirin.view.CircleImageView android:id="@id/top1_photo_iv" android:padding="@dimen/x4" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@mipmap/avatar_photo" android:layout_alignParentStart="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:id="@id/top1_name" android:paddingBottom="@dimen/x6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alan" android:layout_centerVertical="true" android:layout_toEndOf="@id/top1_photo_iv" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/top1_dis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="56km" android:layout_below="@id/top1_name" android:layout_toEndOf="@id/top1_photo_iv" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/main_style_color" android:id="@id/top1_tv" android:padding="@dimen/x4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank_top_1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/no_rank_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_data_found" android:drawablePadding="20.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" app:drawableTopCompat="@drawable/none_data_img" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rank_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x5" />
+    </RelativeLayout>
+</LinearLayout>

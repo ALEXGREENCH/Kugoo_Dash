@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/vehicle_shap_dialog" android:layout_width="350.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x10" android:layout_marginTop="40.0dip" android:text="@string/delete_nfc_card_warn" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/x30">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/cancle_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/ok_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

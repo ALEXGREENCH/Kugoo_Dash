@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/line_kmh" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x10">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x8" android:text="℃" android:layout_weight="1.0" />
+        <ImageView android:id="@id/cb_kmh" android:background="@drawable/selector_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/x8" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/line_mph" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x8" android:text="℉" android:layout_weight="1.0" />
+        <ImageView android:id="@id/cb_mph" android:background="@drawable/selector_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/x8" android:checked="false" android:button="@null" />
+    </LinearLayout>
+</LinearLayout>

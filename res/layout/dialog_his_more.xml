@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/his_more_dialog_bg" android:layout_width="120.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center_horizontal" android:id="@id/more_delete" android:padding="@dimen/x3" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/delete" />
+    <View android:background="@color/black99" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/x2" android:layout_marginRight="@dimen/x2" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_style_color" android:gravity="center_horizontal" android:id="@id/more_screen" android:padding="@dimen/x3" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/txt_screen" />
+</LinearLayout>

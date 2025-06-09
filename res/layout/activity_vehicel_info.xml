@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_voltage" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/current_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0V" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_electricity" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/current_electricity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0A" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_power" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/current_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0W" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge_cycles" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/charge_cycles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

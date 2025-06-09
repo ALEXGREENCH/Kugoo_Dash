@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/grid_image" android:paddingBottom="?android:actionBarSize" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="3" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:textColorHint="@color/text_gray" android:id="@id/time_text" android:background="#cc000000" android:paddingLeft="10.0sp" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/temp_date" />
+    <RelativeLayout android:id="@id/footer_layout" android:background="#cc000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/category_button" android:background="@null" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/all_folder" android:singleLine="true" android:drawableRight="@mipmap/imageselector_select_album" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

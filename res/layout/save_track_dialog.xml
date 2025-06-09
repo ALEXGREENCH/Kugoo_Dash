@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/image_dialog_bg" android:padding="@dimen/x6" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center_horizontal" android:layout_width="@dimen/x80" android:layout_height="wrap_content" android:text="@string/txt_saved_track" />
+    <View android:background="@color/color_setting_view" android:layout_width="@dimen/x80" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/main_style_color" android:id="@id/save_track_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" />
+</LinearLayout>

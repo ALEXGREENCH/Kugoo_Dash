@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/main_start_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_top_back" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_bg_white" android:layout_width="@dimen/x100" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x20">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3" android:layout_marginBottom="@dimen/x3" android:text="@string/check_email_tips" />
+        <View android:background="@color/text_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x6" android:layout_marginBottom="@dimen/x6" android:text="@string/check_email_info" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/check_email_btn" android:background="@drawable/bg_forgetpwd_btn" android:padding="@dimen/x3" android:layout_width="@dimen/x72" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x30" android:text="@string/login_btn" />
+</LinearLayout>

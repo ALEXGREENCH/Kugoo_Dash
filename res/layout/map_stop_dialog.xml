@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/image_dialog_bg" android:padding="@dimen/x3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/map_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/quit_this_ride_text" />
+    <View android:background="@color/edit_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/x10" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/x12" android:layout_marginTop="@dimen/x3">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/exit_no" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/txt_no" android:layout_weight="1.0" />
+        <View android:layout_gravity="center" android:id="@id/center_view" android:background="@color/edit_bg_color" android:layout_width="1.0dip" android:layout_height="@dimen/x12" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/exit_yes" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/txt_yes" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

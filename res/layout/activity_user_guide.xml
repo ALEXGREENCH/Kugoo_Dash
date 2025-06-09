@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/action_bar_back_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_guide" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_1" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_1" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/user_guide_1_night" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_2" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_2" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@mipmap/user_guide_2" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_3" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_3" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/user_guide_3_night" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_4" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_4" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/user_guide_4_night" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_5" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_5" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/user_guide_5_night" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_6" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ble_user_guide_6" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/user_guide_6_night" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/user_guide_go_btn" android:background="@drawable/round_corner_gray_btn" android:layout_width="220.0dip" android:layout_height="50.0dip" android:text="GO" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

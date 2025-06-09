@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hardwareAccelerated="false" android:largeHeap="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="#ffcccccc" android:indeterminateTintMode="src_atop" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/save_image_liner" android:padding="@dimen/x15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/main_style_color" android:id="@id/save_image_btn" android:background="@drawable/image_dialog_bg" android:layout_width="250.0dip" android:layout_height="45.0dip" android:text="@string/save_image_text" android:textAllCaps="false" />
+        <Button android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/save_image_cancel_btn" android:background="@drawable/image_dialog_bg" android:layout_width="250.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/x5" android:text="@string/cancel" android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>

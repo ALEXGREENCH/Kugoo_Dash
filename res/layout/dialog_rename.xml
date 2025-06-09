@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x6" android:text="@string/setting_new_name" />
+        <EditText android:id="@id/bluetooth_new_name" android:layout_width="fill_parent" android:layout_height="@dimen/x15" android:layout_marginTop="@dimen/x10" android:hint="@string/setting_hint_name" style="@style/change_edit_style_new" />
+        <View android:background="@color/color_setting_view" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/x5" android:layout_marginTop="@dimen/x10" android:layout_marginRight="@dimen/x5" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/x18">
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/change_name_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/color_setting_view" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/x5" android:layout_marginBottom="@dimen/x5" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/change_name_ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

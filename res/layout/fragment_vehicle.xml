@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="visible" layout="@layout/layout_vehicle_main" />
+    <include android:visibility="gone" layout="@layout/layout_vehicle_detail" />
+    <include android:visibility="gone" layout="@layout/layout_vehicle_map" />
+</FrameLayout>

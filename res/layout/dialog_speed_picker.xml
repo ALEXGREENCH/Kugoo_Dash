@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/x3" android:layout_width="320.0dip" android:layout_height="wrap_content">
+        <com.kugoo.kugookirin.view.PickerView android:layout_gravity="center_horizontal" android:id="@id/speed_pv" android:background="@drawable/image_dialog_bg" android:layout_width="fill_parent" android:layout_height="@dimen/x55" android:layout_marginTop="@dimen/x5" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/x18" android:layout_marginTop="@dimen/x5">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/speed_pv_cancel" android:background="@drawable/image_dialog_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:layout_width="30.0dip" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/speed_pv_ok" android:background="@drawable/image_dialog_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

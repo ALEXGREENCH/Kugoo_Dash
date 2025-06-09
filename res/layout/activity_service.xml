@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_top_back" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_service_bg" android:paddingTop="@dimen/x4" android:paddingBottom="@dimen/x4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x2" android:text="@string/addressee_email" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_gray" android:id="@id/feed_back_emaiaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x6" android:text="@string/sale_service_addr" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_service_bg" android:paddingTop="@dimen/x4" android:paddingBottom="@dimen/x4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x2" android:text="@string/sender_email" />
+                <EditText android:textSize="18.0sp" android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/sender_email" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x6" android:hint="@string/forgot_email" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_service_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x2" android:text="@string/feedback_subject" />
+                <EditText android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center_vertical" android:id="@id/feed_back_subject" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minHeight="@dimen/x13" />
+            </LinearLayout>
+            <ScrollView android:background="@drawable/shape_service_bg" android:layout_width="fill_parent" android:layout_height="@dimen/x120" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="18.0sp" android:textColor="@color/text_color" android:textColorHint="@color/text_color" android:gravity="top" android:id="@id/feed_back_describe" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/feedback_message" android:lineSpacingExtra="7.0dip" />
+                </LinearLayout>
+            </ScrollView>
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/feedback_submit" android:background="@drawable/shape_login_bg02" android:padding="10.0dip" android:layout_width="@dimen/x100" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x10" android:text="@string/feedback_submit" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

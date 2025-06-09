@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warnning" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:id="@id/tv_speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_speed_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_color" android:gravity="center" android:id="@id/blt_set_cancle_fix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/text_color" android:gravity="center" android:id="@id/blt_set_ok_fix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

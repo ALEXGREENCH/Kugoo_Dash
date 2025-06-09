@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_white_bg02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8" android:src="@mipmap/loguot_tips" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_gray" android:gravity="center" android:padding="@dimen/x8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_warning" />
+        <View android:background="@color/color_setting_view" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/main_style_color" android:id="@id/delete_data_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="@style/text_style01" />
+            <View android:background="@color/color_setting_view" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:textColor="@color/main_style_color" android:id="@id/delete_data_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="@style/text_style01" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

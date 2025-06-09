@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <TextView android:textColor="@color/text_color" android:id="@id/new_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3" android:text="@string/new_name" android:layout_marginStart="@dimen/x10" />
+    <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:gravity="top" android:id="@id/new_name_et" android:background="@null" android:padding="@dimen/x5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" android:hint="@string/empty_name" android:layout_marginHorizontal="@dimen/x5" />
+    <LinearLayout android:orientation="vertical" android:id="@id/change_pwd_layout" android:padding="@dimen/x5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" android:layout_marginHorizontal="@dimen/x5">
+        <LinearLayout android:orientation="vertical" android:id="@id/old_pwd_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/text_color" android:id="@id/old_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/old_password" />
+            <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/old_pwd_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3" android:layout_marginBottom="@dimen/x3" android:hint="@string/old_password" android:digits="\ 0123456789" android:inputType="textPassword" />
+            <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <TextView android:textColor="@color/text_color" android:id="@id/new_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_pwd" />
+        <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/new_pwd_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3" android:layout_marginBottom="@dimen/x3" android:hint="@string/new_pwd" android:digits="\ 0123456789" android:inputType="textPassword" />
+        <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/text_color" android:id="@id/confirm_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm_new_password" />
+        <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/confirm_pwd_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x3" android:layout_marginBottom="@dimen/x3" android:hint="@string/confirm_new_password" android:digits="\ 0123456789" android:inputType="textPassword" />
+        <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/summit_btn" android:layout_marginLeft="@dimen/x20" android:layout_marginTop="@dimen/x5" android:layout_marginRight="@dimen/x20" android:text="@string/ok" android:layout_marginHorizontal="@dimen/x20" style="@style/rounded_main_color_button" />
+</LinearLayout>

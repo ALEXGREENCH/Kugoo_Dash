@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/page_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/page_rv" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout android:id="@id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/none_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_data_found" android:drawablePadding="20.0dip" android:layout_centerInParent="true" app:drawableTopCompat="@drawable/none_data_img" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <FrameLayout android:id="@id/track_record_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/x1">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.kugoo.kugookirin.view.MyTabLayout android:id="@id/record_tab" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height" app:tabIndicatorColor="@color/main_style_color" app:tabIndicatorHeight="2.0dip" app:tabPaddingEnd="20.0dip" app:tabPaddingStart="20.0dip" app:tabSelectedTextColor="@color/main_style_color" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/text_color" />
+            <com.kugoo.kugookirin.view.MyViewPager android:id="@id/record_vp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:id="@id/layout_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" layout="@layout/dialog_history_selector" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/x5">
+        <EditText android:textColor="@color/text_color" android:textColorHint="@color/text_gray" android:id="@id/name_et" android:background="@null" android:paddingBottom="@dimen/x20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/introduce_yourself" android:maxLength="150" />
+        <View android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/text_gray" android:layout_gravity="end" android:id="@id/tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x5" android:text="0/150" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sob="http://schemas.android.com/apk/res-auto">
+    <com.kugoo.kugookirin.view.SobLooperPager android:id="@id/for_you_sl_pager" android:layout_width="fill_parent" android:layout_height="150.0dip" sob:is_title_show="false" sob:show_pager_count="multi" sob:switch_time="3000" />
+</LinearLayout>

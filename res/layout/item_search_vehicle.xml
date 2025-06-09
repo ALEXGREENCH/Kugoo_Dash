@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kugoo.kugookirin.view.CircleImageView android:id="@id/item_avatar" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/avatar_photo" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:id="@id/item_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Name" android:layout_marginStart="@dimen/x5" android:layout_toEndOf="@id/item_avatar" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_style_color" android:id="@id/item_vehicle_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Model" android:layout_below="@id/item_user_name" android:layout_marginStart="@dimen/x5" android:layout_toEndOf="@id/item_avatar" />
+</RelativeLayout>

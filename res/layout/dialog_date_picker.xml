@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <DatePicker android:theme="@style/MyDatePicker" android:id="@id/date_pick" android:background="@drawable/image_dialog_bg" android:layout_width="320.0dip" android:layout_height="wrap_content" android:calendarViewShown="false" android:datePickerMode="spinner" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/picker_cancel" android:background="@drawable/image_dialog_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:layout_width="10.0dip" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/picker_ok" android:background="@drawable/image_dialog_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/confirm_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/rank_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x5" android:layout_marginRight="@dimen/x5" app:tabIndicatorColor="@color/main_style_color" app:tabIndicatorHeight="2.0dip" app:tabPaddingEnd="20.0dip" app:tabPaddingStart="20.0dip" app:tabSelectedTextColor="@color/text_color" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/text_gray" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/rank_view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

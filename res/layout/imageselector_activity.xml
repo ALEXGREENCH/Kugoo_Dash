@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/imageselector_activity_layout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/imageselector_title_bar" />
+    <FrameLayout android:id="@id/image_grid" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

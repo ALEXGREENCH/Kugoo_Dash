@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/imageselector_photo" android:scaleType="centerInside" android:contentDescription="@null" />
+    <View android:id="@id/photo_mask" android:background="@color/photo_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/photo_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/imageselector_select_uncheck" android:contentDescription="@null" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/image_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/map_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/txt_no_save_data" />
+    <View android:background="@color/edit_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/dialog_ok" android:padding="@dimen/x4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ok" />
+</LinearLayout>

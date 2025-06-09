@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.vehicle.kugooa" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="andorid.permission.MONUN_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <permission android:name="com.vehicle.kugooa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.vehicle.kugooa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/app_icon" android:label="@string/my_app_name" android:name="com.kugoo.kugookirin.utils.MyApplication" android:requestLegacyExternalStorage="true" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.UserGuideActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.AgreementActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.TemptureUnitActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.CirclePlayVideoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.PublishTopicActivity" android:theme="@style/Theme.Search"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.PublishRemindActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.DynamicSettingActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.PublishLocActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.FriendListActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.DynamicDetailActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.DiscoverSearchActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.ComProfileActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.RankListActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.ChangeMottoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.ChangeNameActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.BrightnessActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.SpeedLimitActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.StartupActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.ChangeUnitActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.SignLoginActivity"/>
+        <activity android:exported="true" android:name="com.kugoo.kugookirin.LauncherActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.ChangeUserPwdActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.ServiceActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.DarkModeActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.SettingsActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.ThrottleStartingForceActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.BrakeForceActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.SystemInfoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.CheckInfoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.NfcActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.NewNfcActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.BeamLightsActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.VehicleInfoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.CycleInfoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.bluetooth.DiscoverActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.EmailLoginActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.EmailSignUpActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.EmailForgotActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.CheckEmailActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.ChangeBleInfoActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.ModifyPersonalActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.VersionActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.ShowTrackActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.MobileLoginActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.MobileSignUpActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.MobileForgotActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.vehicle.NavigationalSearchActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.kugoo.kugookirin.MainActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.ImagePagerActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.InfoHintActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.PublishActivity"/>
+        <activity android:exported="false" android:name="com.lidong.photopicker.PhotoPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lidong.photopicker.PhotoPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.social.HomePageActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.more.TrackRecordActivity"/>
+        <activity android:exported="false" android:name="com.kugoo.kugookirin.user.country.CountryActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBQTyKTsKrZ4AamGOtID4qHsmdgOohMbas"/>
+        <provider android:authorities="com.kugoo.kugookirin.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths02"/>
+        </provider>
+        <service android:name="com.kugoo.kugookirin.bluetooth.LFBluetootService"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <provider android:authorities="com.vehicle.kugooa.com.mob.MobProvider" android:exported="false" android:multiprocess="true" android:name="com.mob.MobProvider"/>
+        <activity android:exported="true" android:name="com.mob.id.MobIDSYActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.id.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.mob.guard.MobTranPullLockActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.open.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.MobACService">
+            <intent-filter>
+                <action android:name="com.mob.service.action.MOB_AC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.mob.id.MobIDActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.id.app_30000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.id.MobIDService">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_ID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="mob_guard_version" android:value="30000"/>
+        <meta-data android:name="mob_id_ver" android:value="30000"/>
+        <activity android:exported="true" android:name="com.mob.guard.MobTranPullUpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.open.app_20000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.guard.MobGuardPullUpService">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_GUARD_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:name="com.yancy.imageselector.ImageSelectorActivity" android:theme="@style/ImageSelectorTheme"/>
+        <activity android:name="com.zhihu.matisse.ui.MatisseActivity"/>
+        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity"/>
+        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.vehicle.kugooa" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.vehicle.kugooa.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.vehicle.kugooa.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.vehicle.kugooa.com.mob.MobProvider" android:exported="false" android:multiprocess="true" android:name="com.mob.MobProvider"/>
+        <meta-data android:name="Mob-AppKey" android:value="37d10e1cdfbc6"/>
+        <meta-data android:name="Mob-AppSecret" android:value="e6163af4409bc56cfbc0716342ff7eae"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.mob.tools.MobUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+</manifest>

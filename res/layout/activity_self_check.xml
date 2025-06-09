@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <LinearLayout android:gravity="center" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x10" android:layout_marginBottom="@dimen/x10">
+            <com.kugoo.kugookirin.view.SelfCheckCircleView android:layout_gravity="center" android:id="@id/self_check_circleView" android:layout_width="@dimen/x55" android:layout_height="@dimen/x55" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/gray_6a" android:layout_gravity="center" android:id="@id/check_progress_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" />
+        </FrameLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/x5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/brake_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_brake" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/brake_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/controller_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_controller" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/controller_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/battery_temp_protection_flag" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_battery_temp_protection_flag" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/battery_temp_protection_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/battery_temp_alert_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_battery_temp_alert" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/battery_temp_alert_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/communication_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_communication" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/com_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/com_receive_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_com_receive" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/com_receive_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/com_send_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_com_send" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/com_send_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/motor_phase_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_motor_phase" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/motor_phase_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/power_sensor_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/outage_brake_crank" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/power_sensor_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/motor_temp_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_motor_temperature" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/motor_temp_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/current_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_current" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/current_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/battery_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_battery" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/battery_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/brake_crank_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/brake_crank" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/brake_crank_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/accelerator_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_accelerator" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/accelerator_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/hall_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_hall" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/hall_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/controller_communication_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_controller_communication" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/controller_communication_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/handle_piece" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/self_check_handle_position" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/color_check_status" android:id="@id/handle_check_result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/red" android:id="@id/test__1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/red" android:id="@id/test__2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/check_info_start" android:background="@drawable/bg_forgetpwd_btn" android:padding="@dimen/x3" android:layout_width="@dimen/x72" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x30" android:layout_marginBottom="20.0dip" android:text="@string/check_info_start" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

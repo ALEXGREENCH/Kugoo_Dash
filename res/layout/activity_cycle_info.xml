@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/single_mileage" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/single_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ride_mileage" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/ride_mileage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/single_ride" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/single_ride" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0h" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_ride" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/total_ride" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0h" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/maximum_speed" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/maximum_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0km/h" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/average_speed" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/average_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0km/h" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/smssdk_gray_press" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

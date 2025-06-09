@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/instrument_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x30" android:src="@mipmap/icon_instrument" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="300.0dip" android:layout_height="@dimen/x15" android:layout_marginTop="@dimen/x30">
+        <ImageView android:background="@drawable/bright_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/bright_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/level_01" android:layout_width="100.0dip" android:layout_height="fill_parent" android:src="@drawable/bright_bar_01" />
+            <ImageView android:id="@id/level_02" android:layout_width="100.0dip" android:layout_height="fill_parent" android:src="@drawable/bright_bar_02" />
+            <ImageView android:id="@id/level_03" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="fill_parent" android:src="@drawable/bright_bar_03" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/low_bright" android:paddingStart="@dimen/x5" />
+        <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/hight_bright" android:paddingEnd="@dimen/x5" />
+    </FrameLayout>
+</LinearLayout>

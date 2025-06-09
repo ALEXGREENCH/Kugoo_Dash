@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kugoo.kugookirin.view.CircleImageView android:id="@id/user_item_Avatar" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/avatar_photo" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:maxEms="15" android:layout_centerVertical="true" android:layout_marginStart="@dimen/x5" android:layout_toEndOf="@id/user_item_Avatar" />
+    <Button android:textSize="14.0sp" android:textColor="@color/color_add_friend" android:id="@id/user_add_btn" android:background="@drawable/selector_add_friend" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="28.0dip" android:text="+Add" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_alignParentEnd="true" />
+</RelativeLayout>

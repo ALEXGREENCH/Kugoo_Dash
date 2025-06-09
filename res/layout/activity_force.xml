@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_top_back" />
+    <TextView android:textColor="@color/red" android:id="@id/test" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_0" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x10">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_0" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_0_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_1" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_1" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_1_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_2" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_2" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_2_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_3" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_3" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_3_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_4" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_4" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_4_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/force_5" android:background="@drawable/dialog_bg" android:layout_width="@dimen/x110" android:layout_height="@dimen/x20" android:layout_marginTop="@dimen/x5">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/force_5" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/force_5_cb" android:background="@drawable/selector_checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path name="my_images02" path="Pictures" />
+    <files-path name="int_root02" path="/" />
+    <cache-path name="app_cache02" path="/" />
+    <external-path name="ext_root02" path="Documents/" />
+    <external-files-path name="ext_pub02" path="/" />
+    <external-cache-path name="ext_cache02" path="/" />
+    <files-path name="shared_images02" path="shared_images/" />
+</paths>

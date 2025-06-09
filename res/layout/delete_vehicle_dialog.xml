@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_bg_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8" android:text="@string/delete_vehicle" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/x5" android:text="@string/delete_vehicle_tip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/delete" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

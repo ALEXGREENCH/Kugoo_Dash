@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/image_dialog_bg04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/share_ok" android:padding="10.0dip" android:layout_width="@dimen/x120" android:layout_height="wrap_content" android:text="@string/share_title" />
+    <View android:background="@color/edit_bg_color" android:layout_width="@dimen/x120" android:layout_height="1.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/share_cancel" android:padding="10.0dip" android:layout_width="@dimen/x120" android:layout_height="wrap_content" android:text="@string/cancel" />
+</LinearLayout>

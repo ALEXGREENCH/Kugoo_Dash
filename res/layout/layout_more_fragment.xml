@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/main_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/page_part_bg" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/dark_made_btn" android:padding="@dimen/x6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@mipmap/icon_dark_made" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/avatar_edit_btn" android:padding="@dimen/x6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@mipmap/icon_person_msg" android:layout_alignParentEnd="true" />
+            <com.kugoo.kugookirin.view.CircleImageView android:layout_gravity="center" android:id="@id/more_portrait_iv" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="50.0dip" android:src="@mipmap/avatar_photo" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_follower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignTop="@id/more_portrait_iv" android:layout_marginEnd="40.0dip" android:layout_toStartOf="@id/more_portrait_iv">
+                <TextView android:textSize="22.0sp" android:textColor="@color/text_color" android:id="@id/more_follower_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_followers" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_following" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignTop="@id/more_portrait_iv" android:layout_marginStart="40.0dip" android:layout_toEndOf="@id/more_portrait_iv">
+                <TextView android:textSize="22.0sp" android:textColor="@color/text_color" android:id="@id/more_following_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_6a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_friends" />
+            </LinearLayout>
+            <TextView android:textSize="22.0sp" android:textColor="@color/text_color" android:layout_gravity="center" android:id="@id/more_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/please_login" android:layout_below="@id/more_portrait_iv" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/more_user_lv_country_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/more_name_tv" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/more_country_img" android:layout_width="30.0dip" android:layout_height="15.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/more_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="" android:layout_marginHorizontal="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/more_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="" android:layout_marginHorizontal="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/page_part_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/riding_data" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/social_data_layout">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_odo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/more_odo_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/txt_km" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/odo" android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_odo_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/more_odo_time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/unit_hour" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/odo_time" android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rankTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_max_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:id="@id/more_max_speed_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/unit_kmh" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max" android:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/riding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_track_record" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/icon_trace" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/history_title" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="20.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_friend_challenge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@mipmap/icon_challenge" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/more_friends_challenge" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="@dimen/x6" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/page_part_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_about" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/icon_about" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/more_about_us" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="@dimen/x6" />
+                </LinearLayout>
+                <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="50.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_service" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/avatar_service" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/avatar_customer_service" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="20.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/page_part_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_change_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/change_bg_img" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/change_background_color" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="50.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_version" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/app_version" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/avatar_version" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="50.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_share" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/x4" android:src="@drawable/icon_share" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_title" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avatar_next" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:id="@id/social_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/x25" android:layout_marginLeft="@dimen/x5" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/x5">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_posting_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x2" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_posting" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_rank_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_ranking_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x2" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_ranking" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="24.0sp" android:textColor="@color/text_color" android:id="@id/more_badges_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x2" android:text="0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_badges" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

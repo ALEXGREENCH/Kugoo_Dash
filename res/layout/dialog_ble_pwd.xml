@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x4" android:text="@string/setting_new_pwd" />
+        <EditText android:id="@id/ble_old_pwd" android:layout_width="fill_parent" android:layout_height="@dimen/x15" android:layout_marginTop="@dimen/x10" android:hint="@string/enter_old_password" android:maxLength="6" android:inputType="numberPassword" style="@style/change_edit_style_new" />
+        <EditText android:id="@id/ble_new_pwd" android:layout_width="fill_parent" android:layout_height="@dimen/x15" android:layout_marginTop="@dimen/x4" android:hint="@string/enter_new_password" android:maxLength="6" android:inputType="numberPassword" style="@style/change_edit_style_new" />
+        <EditText android:id="@id/ble_confirm_pwd" android:layout_width="fill_parent" android:layout_height="@dimen/x15" android:layout_marginTop="@dimen/x4" android:hint="@string/confirm_new_password" android:maxLength="6" android:inputType="numberPassword" style="@style/change_edit_style_new" />
+        <View android:background="@color/color_setting_view" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/x5" android:layout_marginTop="@dimen/x10" android:layout_marginRight="@dimen/x5" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/x18" android:layout_marginLeft="@dimen/x10" android:layout_marginRight="@dimen/x10">
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/change_pwd_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/color_setting_view" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/x5" android:layout_marginBottom="@dimen/x5" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/change_pwd_ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_history_top_bar" />
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/video_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_centerVertical="true" />
+</RelativeLayout>

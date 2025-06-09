@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/vehicle_item_layout" android:background="@drawable/dialog_bg04" android:layout_width="@dimen/x40" android:layout_height="@dimen/x40" android:layout_marginEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/vehicle_item_img" android:layout_width="@dimen/x40" android:layout_height="@dimen/x25" android:layout_marginTop="10.0dip" android:src="@mipmap/bike_img" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_gray" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/vehicle_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="Vehicle Name" android:maxLines="1" />
+    <ImageView android:layout_gravity="end" android:id="@id/vehicle_del_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vehicle_del_icon" />
+</FrameLayout>

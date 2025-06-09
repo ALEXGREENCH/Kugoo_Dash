@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/image_dialog_bg02" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/his_dialog_delete" android:layout_width="fill_parent" android:layout_height="@dimen/x17" android:text="@string/motion_record_delete" android:textAllCaps="false" />
+    <View android:background="@color/bg_horizontal_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/main_style_color" android:gravity="center" android:id="@id/his_dialog_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/x17" android:text="@string/cancel" android:textAllCaps="false" />
+</LinearLayout>
