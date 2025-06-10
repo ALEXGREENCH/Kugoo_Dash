@@ -6,24 +6,17 @@
     <color name="black99">#99ffffff</color>
     <color name="btn_disabled">#ff1d1e21</color>
     <color name="color_edit">#ff121212</color>
-	<color name="color_primary">#C724FF</color>
+    <color name="color_primary">#ff000000</color>
     <color name="content_bg">#ff000000</color>
     <color name="dialog_bg">#ff1d1e21</color>
     <color name="edit_bg_color">#ff1d1e21</color>
     <color name="header_black">#ffffffff</color>
     <color name="item">#ff000000</color>
     <color name="line_color">#ff2d2d2d</color>
-	<color name="main_bg_color">#000000</color>
+    <color name="main_bg_color">#ff000000</color>
     <color name="nfc_bg_color">#cfffffff</color>
     <color name="page_bg_color">#ff2d2d2d</color>
     <color name="plate_bg">#ff1d1e21</color>
     <color name="setting_bg_color">#ff0a0a0a</color>
-	<color name="text_color">#00FF00</color>
-	<color name="main_style_color">#FF1493</color>
-	
-	<color name="black_neon">#000000</color>
-	<color name="neon_green">#00FF00</color>
-	<color name="neon_purple">#C724FF</color>
-	<color name="neon_blue">#00BFFF</color>
-	<color name="neon_pink">#FF1493</color>
+    <color name="text_color">#ffffffff</color>
 </resources>

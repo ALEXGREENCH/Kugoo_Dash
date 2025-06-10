@@ -17,15 +17,13 @@
         <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
     </style>
     <style name="AppTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
-		<item name="android:windowBackground">@color/black_neon</item>
-		<item name="android:textColorPrimary">@color/neon_green</item>
-		<item name="android:statusBarColor">@color/neon_purple</item>
-		<item name="android:navigationBarColor">@color/black_neon</item>
-		<item name="colorPrimary">@color/neon_purple</item>
-		<item name="colorPrimaryDark">@color/neon_blue</item>
-		<item name="colorAccent">@color/neon_pink</item>
-		<item name="chipIconTint">@color/neon_pink</item>
-	</style>
+        <item name="android:textColorPrimary">@color/text_color</item>
+        <item name="android:windowBackground">@color/main_bg_color</item>
+        <item name="android:colorPrimaryDark">@color/main_bg_color</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="chipIconTint">@color/main_style_color</item>
+        <item name="colorPrimary">#88000000</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="buttonIconDimen">@dimen/abc_alert_dialog_button_dimen</item>
