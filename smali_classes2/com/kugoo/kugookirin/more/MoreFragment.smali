@@ -676,7 +676,7 @@
     .line 240
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string v0, "http://www.kugookirin.com/about_complex.aspx?nid=1"
+    const-string v0, "https://t.me/kugoo_app"
 
     .line 241
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
