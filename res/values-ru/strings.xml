@@ -29,7 +29,7 @@
     <string name="abc_toolbar_collapse_description">Свернуть</string>
     <string name="account_information">Информация об аккаунте</string>
     <string name="add_vehicle">Добавить</string>
-    <string name="add_vehicle_tip">Подключите свой автомобиль и наслаждайтесь поездкой</string>
+    <string name="add_vehicle_tip">Подключите свой транспорт и наслаждайтесь поездкой</string>
     <string name="addition_vehicle">Добавление транспортного средства</string>
     <string name="addressee_email">адресат:</string>
     <string name="album_name_all">Все</string>
@@ -569,7 +569,7 @@
     <string name="txt_correct_num">Введите правильный номер телефона</string>
     <string name="txt_country">Страна</string>
     <string name="txt_destination">Пункт назначения</string>
-    <string name="txt_discover">Обнаружить</string>
+    <string name="txt_discover">Вокруг</string>
     <string name="txt_edit">Редактировать</string>
     <string name="txt_email_login">Вход по электронной почте</string>
     <string name="txt_email_no_empty">Адрес электронной почты не может быть пустым</string>
@@ -619,7 +619,7 @@
     <string name="txt_topics">Участие в темах</string>
     <string name="txt_unadd_friend">Подписаться</string>
     <string name="txt_user_name_no_empty">Имя пользователя не может быть пустым!</string>
-    <string name="txt_vehicle">Транспортное средство</string>
+    <string name="txt_vehicle">Транспорт</string>
     <string name="txt_version_info">Информация о версии</string>
     <string name="txt_weight">Вес</string>
     <string name="txt_yes">Да</string>
