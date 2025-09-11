@@ -1,0 +1,167 @@
+// Cross‑vendor BLE ASCII command candidates (safe queries only: ? / =?)
+// These names are collected from patterns observed in various e‑scooter / e‑bike
+// ecosystems and typical embedded firmwares. None are guaranteed on your device.
+// Use only in discovery, log any non‑empty response, never send setters without lab validation.
+
+============================
+SPEED / LIMITS / GEARS
+============================
++SPEED?       // instantaneous speed
++SPEEDAVG?    // average speed
++SPEEDMAX?    // max speed
++LIMSPD?      // speed limit state
++SPLT?        // synonym: limiter toggle
++SPDLT?       // limiter value
++SPDMAX?      // device max speed capability
++GEAR?        // current gear
++GEARS?       // number of gears
++GEARMAX?     // max gear
++GEAR1?       // per‑gear params (if any)
++GEAR2?
++GEAR3?
++GEAR4?
++GEAR5?
++GEARMAP?
++MAP?
+
+============================
+POWER / CURRENT / TORQUE
+============================
++POW?         // power
++POWER?
++CUR?         // current
++CURR?
++AMP?
++AMPS?
++IALIM?       // current limit
++CURMAX?      // max current
++PHASE?
++PHASECUR?
++TORQ?        // torque
++TRQ?
++THRT?        // throttle
++THROTTLE?
++BOOST?
++SOFTSTART?
+
+============================
+BATTERY / BMS
+============================
++BAT?
++BATV?        // battery voltage
++BATI?        // battery current
++BMS?
++BMSFW?
++CELLS?
++CELLV?
++BAL?
++NOMV?
++FULLV?
++CUTV?
++CAP?
++SOH?         // state of health
++SOC?         // state of charge
+
+============================
+TEMPERATURES / THERMAL
+============================
++TEMP?
++TEMPMOT?
++TEMPCONT?
++TEMPBMS?
++THERM?
++FAN?
+
+============================
+MOTOR / DRIVE / MODES
+============================
++MOTOR?
++MOTORFW?
++MOTORID?
++HALL?
++HALLCAL?
++CAL?
++CALIB?
++DRV?         // drive options
++DRIVE?
++DRIVMD?      // drive mode (S/D)
++MODE?
++MODES?
++MDMX?
++WALK?        // walk mode
++MPMD?
++CRUISE?
++CRZE?
++EBS?         // e‑brake strength
++EBKF?
++BSTF?
+
+============================
+LOCK / LIGHTS / HORN / INDICATORS
+============================
++LOCK?
++LOCKS?
+HLGT?
++LIGHTS?
++HEAD?
++HORN?
++INDL?
++INDR?
++TURN?
+
+============================
+UNITS / UI / DISPLAY
+============================
++UNIT?
++UNITS?
++LANG?
++BRIGHT?      // display brightness
++LUMA=M0L?
++TIM=L?
+
+============================
+STATS / ODO / LOGS
+============================
++ODO?
++TRIP?
++TRIPA?
++TRIPB?
++RIDLOG?
++RUNHRS?      // run hours
++CYCLES?      // charge cycles
++ERR?
++ERROR?
++LOG?
++DBG?
++DIAG?
+
+============================
+COMM / BLE / INFO
+============================
++NAME?
+SN+?
++SN?
++MAC?
++IMEI?
++INFO?
++VER?
++FW?
++SW?
++HW?
++SER?
++UART?
++BAUD?
+
+============================
+NFC / KEYS / SECURITY
+============================
++SCCARD?
++RFMD?
++ADDCARD?
++DELCARD?
++CARD?
++PIN?
++CODE?
++KEY?
++KEYS?
+

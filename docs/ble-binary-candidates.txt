@@ -1,0 +1,72 @@
+// Known/suspected binary frames over BLE (use with caution)
+// IMPORTANT:
+// - Prefer ASCII controls (HLGT, +LOCK, +UNIT, +MODE, etc.).
+// - Only send binary control frames on models where ASCII is ineffective and
+//   the frame is confirmed safe for that family.
+// - Never brute-force unknown frames. Validate on bench first.
+
+============================
+TELEMETRY (incoming only)
+============================
+
+// F6 Compact status (battery, speed)
+// AA F1 BAT SPD XOR BB
+//   BAT: 0..100 (%), SPD: 0..200 (km/h), XOR: model-specific
+
+// F10 Main status (speed, counters/flags)
+// AA A1 00 vH vL D0 D1 D2 XOR BB
+
+// F11 Alt status (speed, battery, flags)
+// AA A1 00 vH vL BAT F0 F1 X8 XOR BB
+//   Common flags layout (varies by family):
+//     F0 bit7: LOCK (1=locked)
+//     F0 bit6: UNIT (1=mph)
+//     F1 bit0: LIGHT (1=on)
+//     F1 low nibble: GEAR (1..4)
+
+// F12 Info/service
+// AA A5 00 C0 C1 C2 C3 C4 C5 C6 XOR BB
+
+// F15 / F16 (header 0x01): extended speed/odo/trip layouts
+// See README for field mapping variants
+
+// ":" frames (0x3A ... CR LF) – often internal controller<->display bus,
+// sometimes bridged into BLE by the dashboard. IDs:
+//   ID=9  : Voltage (mV)   -> V = mV/1000.0
+//   ID=23 : Charge cycles  -> integer
+//   ID=82 : Current (A)    -> A ≈ byte[5] / 3.0
+
+============================
+CONTROL (outgoing – only on specific families)
+============================
+
+// Lock/Unlock (kgkrn03/04/05):
+//   LOCK   : AA 03 04 04 88 01 00 20 BB
+//   UNLOCK : AA 03 04 04 88 00 00 21 BB
+// Notes:
+// - Confirm family via GETDEVID → kgkrn03/04/05 or as per app mapping.
+// - Use ASCII +LOCK=0|1 where supported; fall back to these only if ASCII fails.
+
+// Headlight (h6):
+//   ON  : AA 07 06 01 AA BB
+//   OFF : AA 07 06 00 AA BB   // inferred; validate on bench first
+// Notes:
+// - Other families use HLGT=0|1 (ASCII). Use binary only on h6-like dashboards.
+
+// DO NOT SEND telemetry-type frames (AA A1 ..., AA F1 ..., ':' frames). Those are
+// produced by the device and not meant to be polled.
+
+============================
+METHODOLOGY
+============================
+
+- Passive capture:
+  1) After CODE_OK, collect incoming notifications for 60s while toggling UI
+     features (light, lock, units, gear, drive mode).
+  2) Diff frames to map which bits/bytes change with each action.
+  3) Confirm speed/battery/flags parsing per family.
+
+- Active probing (binary):
+  - Restrict to the known control frames above for matching families.
+  - Never brute-force; avoid writing unknown AA/':' frames.
+
